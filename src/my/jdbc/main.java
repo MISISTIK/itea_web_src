@@ -12,6 +12,9 @@ public class main {
 //        String comment = "1";
 
         DBWorker db = new DBWorker();
+        boolean check = db.updatePasswordForUser("misistik@gmail.com");
+        System.out.println(check);
+
 //        db.getUsers();
 //        System.out.println(db.checkUserByLogin("admin@itea.ua"));
 //        db.registerUser(login,password,name,age,gender,address,comment);
