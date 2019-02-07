@@ -1,23 +1,15 @@
 package my.jdbc;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-//        String login = "any@mail.com";
-//        String password = "123";
-//        String name = "Lena";
-//        String age = "18";
-//        String gender = "M";
-//        String address = "Ukraine";
-//        String comment = "1";
-
-        DBWorker db = new DBWorker();
-        boolean check = db.updatePasswordForUser("misistik@gmail.com");
-        System.out.println(check);
-
-//        db.getUsers();
-//        System.out.println(db.checkUserByLogin("admin@itea.ua"));
-//        db.registerUser(login,password,name,age,gender,address,comment);
-        db.close();
+//        List<String> ls = Files.readAllLines(Paths.get("/resources/form.html"));
+//        System.out.println(new File("").getAbsolutePath());
     }
 }
